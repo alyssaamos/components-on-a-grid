@@ -1,5 +1,17 @@
+/*  Typefaces: `Patua One`, `Georgia`
+    Text sizes: `2rem`
+    Line-heights: `1.5`
+    Colours: `#fff`, `#f2f1ed`, `#30658d`, `#000`
+    Gaps: `1rem`
+    Margins: `1rem`
+    Paddings: `1rem`
+    Logo width:* `14rem`*/
+
 html {
   box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -8,11 +20,37 @@ html {
   box-sizing: inherit;
 }
 
-img {
-  width: 100%;
+body {
+  margin: 0
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "header header"
+    "figure 1 figure 2";
+  grid-template-columns: 1fr 1fr;
+}
+
+.pano {
+  grid-area: header;
+}
+
+.logo {
+  grid-rows: 1;
+  grid-columns: 1;
+  z-index: 1;
+  align-self: flex-end;
+  margin: 1rem;
+  width: 14rem;
+}
+
+nav {
+  grid-columns: 2;
+  grid-rows: 1;
+  z-index: 1;
+  padding-right: 1rem;
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
