@@ -5,7 +5,7 @@
     Gaps: `1rem`
     Margins: `1rem`
     Paddings: `1rem`
-    Logo width:* `14rem`*/
+    Logo width:* `14rem` */
 
 html {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
   padding: 1rem;
   display: grid;
   gap: 1rem;
@@ -36,8 +36,8 @@ body {
 }
 
 .logo {
-  grid-rows: 1;
-  grid-columns: 1;
+  grid-row: 1;
+  grid-column: 1;
   z-index: 1;
   align-self: flex-end;
   margin: 1rem;
@@ -45,12 +45,59 @@ body {
 }
 
 nav {
-  grid-columns: 2;
-  grid-rows: 1;
+  grid-column: 2;
+  grid-row: 1;
   z-index: 1;
   padding-right: 1rem;
 }
 
+nav ul {
+  font-family: "Patua One", sans-serif;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-size: 2rem;
+}
+
 header {
   display: contents;
+}
+
+main {
+  display: contents;
+}
+
+figure {
+  margin: 0;
+}
+
+figure:nth-child(1) {
+  grid-area: figure1;
+}
+
+figure:nth-child(2) {
+  grid-area: figure2;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Patua One", sans-serif;
+  color: #30658d;
+  padding-top: 1rem;
+}
+
+p {
+  margin: 0;
 }
