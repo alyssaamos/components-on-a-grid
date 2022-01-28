@@ -53,13 +53,31 @@ nav li {
   margin: 1rem;
 }
 
-nav a {
+a {
   color: #fff;
   font-size: 2rem;
 }
 
-header {
-  display: contents;
+figcaption h2 {
+  font-family: "Patua One", sans-serif;
+  color: #30658d;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.pano {
+  grid-area: banner;
+}
+
+.logo {
+  width: 14rem;
+  grid-area: banner;
+  grid-column: 1 / 2;
+  align-self: end;
+  z-index: 1;
+  margin: 1rem;
 }
 
 main {
@@ -70,19 +88,12 @@ figure {
   margin: 0;
 }
 
-figure:nth-child(1) {
-  grid-area: figure1;
-}
-
-figure:nth-child(2) {
-  grid-area: figure2;
+header {
+  display: contents;
 }
 
 h2 {
-  margin: 0;
-  font-family: "Patua One", sans-serif;
-  color: #30658d;
-  padding-top: 1rem;
+  margin: 1rem 0 0;
 }
 
 p {
