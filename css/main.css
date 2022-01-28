@@ -20,46 +20,37 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 1rem;
   display: grid;
-  gap: 1rem;
-  grid-template-areas:
-    "header header"
-    "figure 1 figure 2";
   grid-template-columns: 1fr 1fr;
-}
-
-.pano {
-  grid-area: header;
-}
-
-.logo {
-  grid-row: 1;
-  grid-column: 1;
-  z-index: 1;
-  align-self: flex-end;
-  margin: 1rem;
-  width: 14rem;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "banner banner"
+    "col1 col2";
 }
 
 nav {
+  grid-area: banner;
   grid-column: 2;
-  grid-row: 1;
-  z-index: 1;
-  padding-right: 1rem;
 }
 
 nav ul {
   font-family: "Patua One", sans-serif;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 nav li {
-  padding-right: 1rem;
+  margin: 1rem;
 }
 
 nav a {
@@ -85,10 +76,6 @@ figure:nth-child(1) {
 
 figure:nth-child(2) {
   grid-area: figure2;
-}
-
-img {
-  width: 100%;
 }
 
 h2 {
